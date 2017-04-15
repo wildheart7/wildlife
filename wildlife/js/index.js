@@ -1,4 +1,3 @@
-
 var $item = $('.carousel .item'); 
 var $wHeight = $(window).height();
 $item.eq(0).addClass('active');
@@ -26,9 +25,7 @@ $('.carousel').carousel({
 });
 
 
-
 var lock = new Auth0Lock('3uZdfqoJlsxfOzsURijaga9hErS8AqYS', 'wildlifesantury.auth0.com');
-
 
 // app.js
 
@@ -37,9 +34,6 @@ var btn_login = document.getElementById('btn-login');
 btn_login.addEventListener('click', function() {
   lock.show();
 });
-
-
-
 
 
 // app.js
@@ -55,37 +49,3 @@ lock.on("authenticated", function(authResult) {
     show_profile_info(profile);
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
